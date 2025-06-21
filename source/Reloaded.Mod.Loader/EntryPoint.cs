@@ -137,7 +137,7 @@ public static class EntryPoint
             _loader.Console.OnConsoleClose += SaveAndFlushLog;
 
         // Hook Steam
-        _steamHook = new SteamHook(hooks, _loader.Logger, Path.GetDirectoryName(_process.MainModule.FileName));
+        //_steamHook = new SteamHook(hooks, _loader.Logger, Path.GetDirectoryName(_process.MainModule.FileName));
     }
 
     private static void LoadMods(IReloadedHooks hooks)
